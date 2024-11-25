@@ -1,9 +1,6 @@
-"use strict";
-window.addEventListener("load", start);
-
 let iterationCount;
 
-function binarySearch(search, values) {
+export default function binarySearch(search, values) {
   let min = 0;
   let max = values.length;
   let middle = findMean();
@@ -52,12 +49,4 @@ function comparefunc(index, search) {
 
 function incrementIterationCounter() {
   iterationCount = iterationCount + 1;
-}
-
-function start() {
-  let index = binarySearch(
-    4,
-    [21, 22, 23, 25, 27, 28, 29, 31, 32, 34, 35, 99, 1002]
-  );
-  console.log("Fundet 28 på " + index);
 }

@@ -1,3 +1,13 @@
+"use strict";
+window.addEventListener("load", start);
+
+function start() {
+  let index = binarySearch(
+    4,
+    [21, 22, 23, 25, 27, 28, 29, 31, 32, 34, 35, 99, 1002]
+  );
+  console.log("Fundet 28 på " + index);
+}
 
 // Test if the binary search returns !-1 if the value is in the array
 function testBinarysearchSuccessCase(expectedValue, values) {
@@ -16,4 +26,3 @@ function testBinarysearchFailCase(unexpectedValue, values) {
     console.log("Test passed");
   }
 }
-
